@@ -1,0 +1,213 @@
+header{
+    background-color: rgb(236, 231, 241);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: rgb(196, 140, 140);
+    height: 80px;
+    width: 100%;
+    position:fixed ;
+}
+
+h1{
+    color:rgb(6, 75, 75) ;
+    position: absolute;
+    left: 120px;
+    top: 0pt;
+    line-height: 80px;
+    background-image: url(image/Logo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 210px;
+    text-indent: -99999999999999px;
+}
+
+header ul{
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    line-height: 80px;
+}
+
+header li{
+    display: inline;
+    margin-right: 4vw;
+}
+
+header a{
+    color:rgb(37, 46, 46);
+    text-decoration: currentColor;
+}
+
+header a:hover{
+    color: rgb(133, 132, 121);
+    text-decoration: rgb(128, 117, 98);
+}
+
+.news{
+    background-color: rgb(99, 84, 99);
+    color: rgb(51, 34, 12);
+    height: 85vh;
+    background-image: url(image/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+.news h2{ 
+        font-size: 60px;
+    }
+    
+    .news p{
+        font-size: 18px;
+        margin: 25px 0;
+    }
+
+    .news a{
+        color: rgba(84, 156, 219, 0.349);
+        text-decoration: none;
+        border:1px solid rgba(81, 159, 219, 0.445);
+        padding :10px 20px;
+        border-radius: 5px;
+    }
+
+    .sloge{
+        background-color: rgb(103, 119, 119);
+        color: rgb(138, 125, 93);
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:20px ;
+        line-height: 1.8em;
+    }
+
+    .shop{
+        display: flex;
+    }
+
+    .shop img{
+        width: 50%;
+    }
+
+    .info{
+        width: 50%;
+        background-color: bisque;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+    }
+
+    .info h2{
+        font-size: 40px;
+        margin-bottom: 30px
+    }
+
+    .product{
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.151);
+        justify-content: space-between;
+        align-items: center;
+        padding: 100px 100px 80px;
+    }
+
+    .product div{
+        width: 300px;
+        text-align: center;
+    }
+
+     .product img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product h3{
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.product p{
+    font-size: 14px;
+    line-height: 1.6em;
+}
+
+    footer{
+        background-color: rgb(6, 10, 10);
+        color: rgb(185, 185, 184);
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:14px ;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .shop{
+        flex-direction: column;
+    }
+
+    .shop img{
+        width: 100%;
+    }
+
+    .info{
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .info h2{
+        font-size: 30px;
+    }
+
+    .product{
+        flex-direction: column;
+        padding: 60px;
+    }
+
+    .product div{
+        margin-bottom: 30pt;
+        color: 60px;
+    }
+
+
+    /*響應式網頁*/
+    @media screen and (max-width : 768px){
+        header ul{
+            display: none;
+        }
+
+        header h1{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .store h2{
+            font-size: 40px;
+        }
+
+        .menu{
+            display: block;
+            background-color: transparent;
+            color: white;
+            font-size: 35px;
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            border: none;
+            cursor: pointer;
+        }
+    }
